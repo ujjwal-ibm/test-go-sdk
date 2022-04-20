@@ -37,11 +37,11 @@ import (
 // VpcV1 : The IBM Cloud Virtual Private Cloud (VPC) API can be used to programmatically provision and manage virtual
 // server instances, along with subnets, volumes, load balancers, and more.
 //
-// API Version: 2022-04-18
+// API Version: 2022-04-13
 type VpcV1 struct {
 	Service *core.BaseService
 
-	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-04-18`
+	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-04-13`
 	// and today's date (UTC).
 	Version *string
 
@@ -62,7 +62,7 @@ type VpcV1Options struct {
 	URL           string
 	Authenticator core.Authenticator
 
-	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-04-18`
+	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-04-13`
 	// and today's date (UTC).
 	Version *string
 }
@@ -121,7 +121,7 @@ func NewVpcV1(options *VpcV1Options) (service *VpcV1, err error) {
 	}
 
 	if options.Version == nil {
-		options.Version = core.StringPtr("2022-04-18")
+		options.Version = core.StringPtr("2022-04-13")
 	}
 
 	service = &VpcV1{
